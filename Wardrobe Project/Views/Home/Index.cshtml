@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>My Wardrobe App!</h1>
+    <p class="lead">MY WARDROBE is a free web application for cataloging your own unique style and clothing items! With this app, you can create personalized outfits, and hold on to the memories of which occasion you wore them!</p>
+    <h5>This is the easy part! Let's gather up your basic items first. Grab one item from each of the provided categories: one top, one bottom, one pair of shoes, and one of your go-to accessories. Then, click one of the buttons below to store them in the MY WARDROBE app! Easy, right?</h5>
+</div>
+
+<div class="row"> 
+        <div class="col-md-4">
+        <h2>@Html.ActionLink("Tops","Index","Tops")</h2>
+        <p>Do you sometimes forget which cute blouse or awesome t-shirt you have in your massive collection? Store those items here -- never forget again!</p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Bottoms", "Index", "Bottoms")</h2>
+        <p>Be honest, finding cute bottoms that fit great can be more of a pain than trying to squeeze into them! Remember which bottoms those irreplaceable bottoms -- store them here!</p>
+    </div>
+</div>
+    <div class="col-md-4">
+    <h2>@Html.ActionLink("Shoes", "Index", "Shoes")</h2>
+    <p>If the shoe fits, you should do yourself a favor and store it here!</p>
+</div>
+<div class="col-md-4">
+    <h2>@Html.ActionLink("Accessories", "Index", "Accessories")</h2>
+    <p>The right accessory can make or break, dress up or dress down any outfit! Remember your faves forever, store your accessories here!p>
+</div>
